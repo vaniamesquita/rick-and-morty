@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HEADER */
+header {
+  max-width: 100%;
+  height: 100vh;
+  position: absolute;
+
+  background: url("/assets/header4.2.png") no-repeat;
+  background-size: cover;
+
+  top: 0;
+}
+
+nav {
+  display: flex;
+  margin: 20px 20px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.header-logo img {
+  width: 135px;
+  display: flex;
+  padding: 10px 0;
+  margin-left: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin: 0 40px;
+}
+
+header nav ul li {
+  margin: 0 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+header nav ul li:hover {
+  cursor: pointer;
+}
+
+/* CARDS */
+
+.card-container {
+  display: flex;
+  position: absolute;
+  top: 200px;
+  margin-left: 20px;
+}
+
+.card-small {
+  width: 450px;
+  height: 200px;
+  display: flex;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-radius: 16px;
+  margin: 30px 100px;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.card-content-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content-info h2 {
+  font-size: 56px;
+  font-weight: bold;
+  color: #f29d0b;
+}
+
+.card-content-info p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.card-content img {
+  width: 120px;
+}
+
+.card-img {
+  position: absolute;
+  left: 63%;
+}
+
+/* responsividade */
+
+@media (min-width: 500px) {
+}
+
+@media (max-width: 480px) {
+  /* HEADER */
+
+  header {
+    background: url("/assets/header5.2.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  nav {
+    margin: 5px 0;
+  }
+
+  .header-nav {
+    display: flex;
+    width: 95%;
+
+    margin: 5px auto;
+
+    border-radius: 6px;
+  }
+
+  .header-nav ul {
+    margin-left: -5px;
+  }
+
+  .header-nav ul li {
+    margin: 0 5px;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .header-logo img {
+    width: 75px;
+
+    margin-left: 2px;
+  }
+
+  /* CARDS */
+
+  .card-small {
+    width: 260px;
+    height: 120px;
+
+    border-radius: 14px;
+    margin: 30px 50px;
+  }
+
+  .card-content-info h2 {
+    font-size: 36px;
+  }
+
+  .card-content-info p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .card-content img {
+    width: 60px;
+  }
+}
