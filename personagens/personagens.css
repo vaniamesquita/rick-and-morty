@@ -89,6 +89,7 @@ header nav ul li:hover {
 .card-personagem:first-child {
   display: none;
 }
+
 .card-personagem {
   background-color: #f6f6f6;
   border-radius: 16px;
@@ -166,7 +167,7 @@ header nav ul li:hover {
   .card-personagem {
     background-color: #f6f6f6;
     border-radius: 16px;
-    height: 300px;
+    height: 310px;
 
     width: 300px;
 
@@ -178,6 +179,6 @@ header nav ul li:hover {
   }
   .card-info p {
     font-size: 13px;
-    margin-top: 5px;
+    margin: 5px;
   }
 }
