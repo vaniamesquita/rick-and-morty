@@ -14,16 +14,16 @@ a:visited {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+
+  background: url("/assets/starry-night-sky.jpg") repeat;
+  background-size: cover;
 }
 
 /* HEADER */
 header {
   max-width: 100%;
-  height: 100vh;
+  height: 100vw;
   position: absolute;
-
-  background: url("/assets/header4.2.png") no-repeat;
-  background-size: cover;
 
   top: 0;
 }
@@ -67,66 +67,57 @@ header nav ul li:hover {
   cursor: pointer;
 }
 
-/* CARDS */
+/* cards personagens */
 
-.card-container {
-  display: flex;
+.personagens-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
   position: absolute;
   top: 200px;
-  margin-left: 20px;
 }
 
-.card-small {
-  width: 450px;
-  height: 200px;
+.card-personagem img {
+  width: 220px;
+
+  border-radius: 15px;
+  margin: 10px auto;
   display: flex;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
-  background-color: #fff;
+}
+.card-personagem:first-child {
+  display: none;
+}
+.card-personagem {
+  background-color: #f6f6f6;
   border-radius: 16px;
-  margin: 30px 100px;
+  height: 400px;
+  margin: 20px;
+  width: 400px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-.card-content {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
+.card-info {
+  margin-top: 20px;
+  text-align: center;
 }
 
-.card-content-info {
-  display: flex;
-  flex-direction: column;
+.card-info strong {
+  font-size: 21px;
 }
-
-.card-content-info h2 {
-  font-size: 56px;
-  font-weight: bold;
-  color: #f29d0b;
-}
-
-.card-content-info p {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.card-content img {
-  width: 120px;
-}
-
-.card-img {
-  position: absolute;
-  left: 63%;
+.card-info p {
+  font-size: 18px;
+  margin-top: 5px;
 }
 
 /* responsividade */
 
-@media (min-width: 500px) {
-}
-
 @media (max-width: 480px) {
   /* HEADER */
 
-  header {
-    background: url("/assets/header5.2.jpg") no-repeat;
+  body {
+    background: url("/assets/starry-night-sky.jpg") repeat;
     background-size: cover;
   }
 
@@ -136,7 +127,7 @@ header nav ul li:hover {
 
   .header-nav {
     display: flex;
-    width: 95%;
+    max-width: 98%;
 
     margin: 5px auto;
 
@@ -159,26 +150,34 @@ header nav ul li:hover {
     margin-left: 2px;
   }
 
-  /* CARDS */
+  /* cards personagens */
 
-  .card-small {
-    width: 260px;
-    height: 120px;
-
-    border-radius: 14px;
-    margin: 30px 50px;
+  .personagens-container {
+    grid-template-columns: 1fr;
+    top: 120px;
   }
 
-  .card-content-info h2 {
-    font-size: 36px;
+  .card-personagem img {
+    width: 160px;
+
+    margin: 10px auto;
   }
 
-  .card-content-info p {
-    font-size: 1.2rem;
-    font-weight: bold;
+  .card-personagem {
+    background-color: #f6f6f6;
+    border-radius: 16px;
+    height: 300px;
+
+    width: 300px;
+
+    margin: 20px auto;
   }
 
-  .card-content img {
-    width: 60px;
+  .card-info strong {
+    font-size: 16px;
+  }
+  .card-info p {
+    font-size: 13px;
+    margin-top: 5px;
   }
 }
