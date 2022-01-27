@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+
+  background: url("/assets/starry-night-sky.jpg") repeat;
+  background-size: cover;
+}
+
+/* HEADER */
+header {
+  max-width: 100%;
+  height: 100vw;
+  position: absolute;
+
+  top: 0;
+}
+
+nav {
+  display: flex;
+  margin: 20px 20px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.header-logo img {
+  width: 135px;
+  display: flex;
+  padding: 10px 0;
+  margin-left: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin: 0 40px;
+}
+
+header nav ul li {
+  margin: 0 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+header nav ul li:hover {
+  cursor: pointer;
+}
+
+/* cards personagens */
+
+.personagens-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  position: absolute;
+  top: 200px;
+}
+
+.card-personagem img {
+  width: 220px;
+
+  border-radius: 15px;
+  margin: 10px auto;
+  display: flex;
+}
+.card-personagem:first-child {
+  display: none;
+}
+
+.card-personagem {
+  background-color: #f6f6f6;
+  border-radius: 16px;
+  height: 400px;
+  margin: 20px;
+  width: 400px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-info strong {
+  font-size: 21px;
+}
+.card-info p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+/* tabela */
+
+.container-table {
+  display: flex;
+  position: absolute;
+  top: 200px;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+}
+
+.table-locations {
+  width: 1200px;
+
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+
+  /* min-width: 300px; */
+}
+
+.table-locations h5 {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.table-locations p {
+  font-size: 1.1rem;
+}
+
+.table-locations table {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.table-locations table th {
+  font-size: 1.2rem;
+
+  border-bottom: 1px solid #5e5e5e;
+}
+
+.table-locations table td {
+  border-bottom: 1px solid #e9e9e9;
+  padding: 10px 0;
+}
+/* responsividade */
+
+/* landscape */
+@media (max-width: 1139px) {
+  .header-nav {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .header-nav ul li {
+    margin: 0 5px;
+
+    font-size: 20px;
+  }
+
+  .header-logo img {
+    width: 90px;
+  }
+
+  /* tabela */
+
+  .container-table {
+    top: 150px;
+  }
+
+  .table-locations {
+    width: 95%;
+  }
+
+  .table-locations h5 {
+    font-size: 32px;
+  }
+
+  .table-locations p {
+    font-size: 20px;
+  }
+
+  .table-locations table th {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .table-locations table td {
+    border-bottom: 1px solid #e9e9e9;
+    padding: 5px 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* HEADER */
+
+  body {
+    background: url("/assets/starry-night-sky.jpg") repeat;
+    background-size: cover;
+  }
+
+  nav {
+    margin: 5px 0;
+  }
+
+  .header-nav {
+    display: flex;
+    max-width: 98%;
+
+    margin: 5px auto;
+
+    border-radius: 6px;
+  }
+
+  .header-nav ul {
+    margin-left: -5px;
+  }
+
+  .header-nav ul li {
+    margin: 0 5px;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .header-logo img {
+    width: 75px;
+
+    margin-left: 2px;
+  }
+
+  /* tabela */
+
+  .container-table {
+    display: flex;
+    position: absolute;
+    top: 150px;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+  }
+
+  .table-locations {
+    width: 400px;
+
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+  }
+
+  .table-locations h5 {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .table-locations p {
+    font-size: 16px;
+  }
+
+  .table-locations table {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .table-locations table th {
+    font-size: 15px;
+
+    border-bottom: 1px solid #5e5e5e;
+  }
+
+  .table-locations table td {
+    border-bottom: 1px solid #e9e9e9;
+    padding: 4px 0;
+    font-size: 12px;
+  }
+}
