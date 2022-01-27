@@ -119,15 +119,75 @@ header nav ul li:hover {
 
 /* responsividade */
 
-@media (min-width: 500px) {
+@media (max-width: 1139px) {
+  header {
+    background-image: none;
+  }
+
+  body {
+    height: 480px;
+
+    background: url("/assets/header4.2.png") no-repeat;
+    background-size: cover;
+  }
+
+  .header-nav {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .header-nav ul li {
+    margin: 0 5px;
+
+    font-size: 20px;
+  }
+
+  .header-logo img {
+    width: 90px;
+  }
+
+  /* CARDS */
+
+  .card-container {
+    top: 100px;
+  }
+
+  .card-small {
+    width: 300px;
+    height: 90px;
+    margin: 15px 0;
+    position: relative;
+    top: 20px;
+  }
+
+ 
+
+  .card-content-info h2 {
+    font-size: 32px;
+  }
+
+  .card-content-info p {
+    font-size: 1.3rem;
+  }
+
+  .card-content img {
+    width: 75px;
+  }
 }
 
 @media (max-width: 480px) {
   /* HEADER */
 
   header {
+    background-image: none;
+   
+  }
+
+  body {
     background: url("/assets/header5.2.jpg") no-repeat;
     background-size: cover;
+    height: 100vh;
+
   }
 
   nav {
@@ -136,7 +196,7 @@ header nav ul li:hover {
 
   .header-nav {
     display: flex;
-    width: 95%;
+    max-width: 98%;
 
     margin: 5px auto;
 
@@ -169,8 +229,9 @@ header nav ul li:hover {
     margin: 30px 50px;
   }
 
-  .card-content-info h2 {
+   .card-content-info h2 {
     font-size: 36px;
+    
   }
 
   .card-content-info p {

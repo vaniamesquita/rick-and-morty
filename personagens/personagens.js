@@ -11,11 +11,11 @@
                 personagens.innerHTML += `
                 <div class="card-personagem"> <img src=`+ results.image + ` > 
                 <div class="card-info">
-                <strong>  ` + results.name +`  </strong> 
-                <p> Espécie: ` + results.species +`</p> 
-                <p> Origem: ` + results.origin.name +`</p> 
-                <p> Location: ` + results.location.name +`</p> 
-                <p> Status: ` + results.status +`</p> 
+                <h3>  ` + results.name +`  </h3> 
+                <p> <strong>Espécie:</strong> ` + results.species +`</p> 
+                <p> <strong>Origem:</strong> ` + results.origin.name +`</p> 
+                <p> <strong>Location:</strong> ` + results.location.name +`</p> 
+                <p> <strong>Status:</strong> ` + results.status +`</p> 
 
                 </div></div>
                 

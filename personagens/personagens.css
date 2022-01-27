@@ -114,6 +114,59 @@ header nav ul li:hover {
 
 /* responsividade */
 
+/* landscape */
+@media (max-width: 1139px) {
+  .header-nav {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .header-nav ul li {
+    margin: 0 5px;
+
+    font-size: 20px;
+  }
+
+  .header-logo img {
+    width: 90px;
+  }
+
+  /* cards personagens */
+
+  .personagens-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 98%;
+    padding-left: 20px;
+    top: 130px;
+  }
+
+  .card-personagem img {
+    width: 150px;
+  }
+
+  .card-personagem {
+    height: 400px;
+    width: 250px;
+    margin: 10px;
+  }
+
+  .card-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .card-info strong {
+    font-size: 16px;
+  }
+  .card-info p {
+    font-size: 16px;
+  }
+
+  .card-info h3 {
+    font-size: 22px;
+  }
+}
+
 @media (max-width: 480px) {
   /* HEADER */
 
@@ -175,10 +228,15 @@ header nav ul li:hover {
   }
 
   .card-info strong {
-    font-size: 16px;
+    font-size: 13px;
   }
   .card-info p {
     font-size: 13px;
     margin: 5px;
+  }
+
+  .card-info h3 {
+    font-size: 20px;
+    margin-top: -10px;
   }
 }
